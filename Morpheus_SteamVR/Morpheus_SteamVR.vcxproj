@@ -94,7 +94,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy "C:\Users\Devran\Documents\GitHub\PSVR_api\Debug\Morpheus_SteamVR.dll" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\morpheus\bin\win32\driver_morpheus.dll*" /Y</Command>
+      <Command>xcopy "$(OutputPath)$(AssemblyName).dll" "C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\morpheus\bin\win32\driver_morpheus.dll*" /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
